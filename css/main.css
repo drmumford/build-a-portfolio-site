@@ -1,0 +1,137 @@
+* {
+    font-family: 'Lato', sans-serif;
+    color: #747704;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.row {
+    width: 100%;
+    margin: 0;
+}
+
+.title-text {
+    text-align: right;
+    text-transform: uppercase;
+}
+
+.text-thin {
+    font-weight: 100;
+}
+
+.text-muted {
+    color: #bcbbbb;
+}
+
+.text-indented {
+    margin-left: 10px;
+}
+
+.title-super {
+    margin-top: 30px;
+    margin-bottom: 8px;
+    font-size: 55px;
+}
+
+.title-sub {
+    font-size: 18px;
+    margin-top: 0px;
+}
+
+.logo {
+    margin-top: 20px;
+    margin-bottom: 0px;
+    width: 110px;
+}
+
+/* Give the user a visual indication that the portfolio
+ * image is a link to more details on the project. */
+.portfolio:hover {
+    border: solid 1px gray;
+    border-radius: 3px;
+    box-shadow: 3px 3px 3px #333;
+    cursor: pointer;
+}
+
+.caption {
+    font-weight: 400;
+    margin-top: 10px;
+    font-size: 30px;
+}
+
+hr {
+    margin-top: 12px;
+    border-width: 4px;
+    border-top-color: #bcbbbb;
+ }
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: #747704;
+    text-decoration: none;
+}
+
+
+.github-link {
+    display: block;
+    font-weight: 100;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* Make button touch finger friendly */
+.button {
+    min-width: 80px;
+    min-height: 40px;
+}
+
+img {
+    margin: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .title-super {
+        margin-top: 35px;
+        font-size: 40px;
+    }
+    .title-sub {
+        font-size: 18px;
+    }
+    .logo {
+        width: 105px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .title-super {
+        margin-top: 45px;
+        font-size: 30px;
+    }
+    .title-sub {
+        font-size: 16px;
+    }
+    .logo {
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .title-super {
+        margin-top: 50px;
+        font-size: 20px;
+    }
+    .title-sub {
+        font-size: 14px;
+    }
+    .logo {
+        width: 95px;
+    }
+}
+
