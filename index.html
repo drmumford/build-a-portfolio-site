@@ -15,29 +15,29 @@
 
         <!-- Portfolio Page Header -->
         <header class="row">
-            <div class="col-xs-2 col-sm-2 col-md-2">
+            <div class="col-xs-2">
                 <img class="logo" src="images/logo-800.png" alt="Designer's Logo"
                      srcset="images/logo-800.png 800w, images/logo-600.png 600w, images/logo-400.png 400w"
                      sizes="(min-width: 400px) 100vw">
             </div>
-            <div class="col-xs-10 col-sm-10 col-md-10 title-text">
+            <div class="col-xs-10 title-text">
                 <h1 class="text-thin title-super">David Mumford</h1>
                 <h3 class="title-sub">Aspiring Designer</h3>
             </div>
         </header>
 
-        <!-- Section Break -->
+        <!-- Visually separate header and main content -->
         <div class="row">
-            <div class="col-md-12">
-                <hr />
-                </div>
+            <div class="col-xs-12">
+                <hr>
             </div>
+        </div>
 
         <!-- My Portfolio -->
         <main>
             <!-- Overview Image, per mock -->
             <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="col-xs-12">
                     <img class="img-responsive" src="images/kitty0-800.jpg" alt="Generic Front-End Development Image"
                          srcset="images/kitty0-800.jpg 800w, images/kitty0-600.jpg 600w, images/kitty0-400.jpg 400w"
                          sizes="(min-width: 400px) 100vw">
@@ -47,12 +47,26 @@
             <!-- Portfolio Samples -->
             <section class="row">
 
-                <header class="col-xs-12 col-sm-12 col-md-12">
+                <header class="col-xs-12">
                     <h2 class="text-muted text-indented">Featured Work</h2>
                 </header>
 
+                <!-- Bootstrap column class associations:
+                        col-xs-xx: phones (extra small, <768px),
+                        col-sm-xx: tablets (small, =768px),
+                        col-md-xx: laptops/desktops (medium, =992px), and
+                        col-lg-xx: desktops (large, =1200px) -->
+
+                <!-- Portfolio sample display:
+                        - on extra small devices, each sample uses the whole row width, i.e. col-xs-12,
+                        - on small devices and larger, each sample uses 1/3rd of the row width, i.e. col-sm-4. -->
+
+                <!-- Don't need to specify column definitions for each device size. The smallest
+                     defined device definition will be used for *all* larger devices. In this case,
+                     the sm column definition will be used for medium and large devices -->
+
                 <!-- Portfolio Sample #1 -->
-                <div class="col-sm-4 col-md-4 text-center">
+                <div class="col-xs-12 col-sm-4 text-center">
                     <img class="img-responsive portfolio" data-toggle="modal" data-target="#ps1"
                          src="images/kitty1-800.jpg" title="Details ..." alt="Image for resume project"
                          srcset="images/kitty1-800.jpg 800w, images/kitty1-600.jpg 600w, images/kitty1-400.jpg 400w"
@@ -64,7 +78,7 @@
                 </div>
 
                 <!-- Portfolio Sample #2 -->
-                <div class="col-sm-4 col-md-4 text-center">
+                <div class="col-xs-12 col-sm-4 text-center">
                     <img class="img-responsive portfolio" data-toggle="modal" data-target="#ps2"
                          src="images/kitty2-800.jpg" title="Details ..." alt="Image for frogger project"
                          srcset="images/kitty2-800.jpg 800w, images/kitty2-600.jpg 600w, images/kitty2-400.jpg 400w"
@@ -76,7 +90,7 @@
                 </div>
 
                 <!-- Portfolio Sample #3 -->
-                <div class="col-sm-4 col-md-4 text-center">
+                <div class="col-xs-12 col-sm-4 text-center">
                     <img class="img-responsive portfolio" data-toggle="modal" data-target="#ps3"
                          src="images/kitty3-800.jpg" title="Details ..." alt="Image for map app project"
                          srcset="images/kitty3-800.jpg 800w, images/kitty3-600.jpg 600w, images/kitty3-400.jpg 400w"
