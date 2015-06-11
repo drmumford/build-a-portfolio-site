@@ -9,6 +9,13 @@
     margin: 0;
 }
 
+/* Header */
+.logo {
+    margin-top: 20px;
+    margin-bottom: 0;
+    width: 110px;
+}
+
 .title-text {
     text-align: right;
     text-transform: uppercase;
@@ -18,17 +25,8 @@
     font-weight: 100;
 }
 
-.text-muted {
-    color: #bcbbbb;
-}
-
-.text-indented {
-    margin-left: 10px;
-}
-
 .title-super {
-    margin-top: 30px;
-    margin-bottom: 8px;
+    margin: 35px 0 8px;
     font-size: 55px;
 }
 
@@ -37,10 +35,30 @@
     margin-top: 0;
 }
 
-.logo {
-    margin-top: 20px;
-    margin-bottom: 0;
-    width: 110px;
+
+/* Visual Separator */
+hr {
+    margin-top: 12px;
+    border-width: 4px;
+    border-top-color: #bcbbbb;
+ }
+
+
+/* Main - Portfolio Samples */
+.text-muted {
+    color: #bcbbbb;
+}
+
+.text-indented {
+    margin-left: 10px;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: #747704;
+    text-decoration: none;
 }
 
 /* Give the user a visual indication that the portfolio
@@ -52,78 +70,81 @@
     cursor: pointer;
 }
 
-.caption {
+.portfolio-link {
+    display: block;
     font-weight: 400;
-    margin-top: 10px;
     font-size: 30px;
+    margin: 10px 0 5px;
 }
-
-hr {
-    margin-top: 12px;
-    border-width: 4px;
-    border-top-color: #bcbbbb;
- }
-
-a:link,
-a:visited,
-a:hover,
-a:active {
-    color: #747704;
-    text-decoration: none;
-}
-
 
 .github-link {
+    text-shadow: -1px -1px 2px #747704;  /* so they can be seen! */
     display: block;
-    font-weight: 100;
+    font-weight: 400;
     font-size: 1.2em;
-    margin-bottom: 20px;
+    margin:  5px 0 10px;
 }
 
-/* Make button touch finger friendly */
+/* Modals */
 .button {
+    /* Make touch (fat-finger) friendly */
     min-width: 80px;
     min-height: 40px;
 }
 
-img {
-    margin: auto;
-}
-
+/* Media Queries */
 @media screen and (max-width: 768px) {
+
     .title-super {
         margin-top: 35px;
         font-size: 40px;
     }
+
     .title-sub {
         font-size: 18px;
     }
+
     .logo {
         width: 105px;
+    }
+
+    /* Provide bigger touch area for smaller screens. */
+    .portfolio-link {
+        margin: 10px 0 5px;
+    }
+
+    .github-link {
+        margin:  5px 0 30px;
     }
 }
 
 @media screen and (max-width: 550px) {
+
     .title-super {
         margin-top: 45px;
         font-size: 30px;
     }
+
     .title-sub {
         font-size: 16px;
     }
+
     .logo {
         width: 100px;
     }
 }
 
 @media screen and (max-width: 450px) {
+
     .title-super {
         margin-top: 50px;
         font-size: 20px;
     }
+
     .title-sub {
         font-size: 14px;
     }
+
     .logo {
         width: 90px;
     }
